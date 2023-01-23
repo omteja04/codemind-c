@@ -2,17 +2,18 @@
 #include<math.h>
 int main()
 {
-    int n,sum=0,k,d,m;
+    int n,d,r,p,s=0,m;
     scanf("%d",&n);
     m=n;
     while(n)
     {
         d=log10(n)+1;
-        k=n%10;
-        sum=sum+pow(k,d);
-        n=n/10;
+        r=n%10;
+        n/=10;
+        p=pow(r,d);
+        s+=p;
     }
-    if(m==sum)
+    if(s==m)
     printf("True");
     else
     printf("False");
