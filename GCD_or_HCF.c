@@ -1,13 +1,13 @@
 #include<stdio.h>
 int main()
 {
-    int n,m,i,g,max;
-    scanf("%d %d",&n,&m);
-    g=(n>m)?n:m;
+    int m,n,g,i,max;
+    scanf("%d %d",&m,&n);
+    g=m>n?m:n;
     for(i=1;i<=g;i++)
     {
-        if(n%i==0&&m%i==0)
-         max=i;
+        if(m%i==0 && n%i==0)
+        max=i;
     }
     printf("%d",max);
 }
