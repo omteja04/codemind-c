@@ -5,9 +5,10 @@ int main()
     scanf("%d",&tc);
     for(k=1;k<=tc;k++)
     {
-    int a,b;
-    scanf("%d%d",&a,&b);
-    printf("%d
-",a+b);
+        int a,b;
+        scanf("%d %d",&a,&b);
+        printf("%d",a+b);
+        printf("
+");
     }
 }
